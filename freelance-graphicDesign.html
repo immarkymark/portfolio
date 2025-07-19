@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="./resources/CSS/style.css" type="text/css" rel="stylesheet">
+                <!-- Extra font: Roca and basic sans -->
+                <link rel="stylesheet" href="https://use.typekit.net/une5rut.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1">
+
+        <title>Mark's Portfolio | Graphic Design</title>
+        <link rel="icon" type="image/png" href="./resources/assets/meardon_logo.png"/>        
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="nav_header">
+            <ul class="header_ul">
+                <li><a id = "nav_home" href="index.html">Home</a></li>
+                <li><a id="nav_contact" href="https://www.linkedin.com/in/mark-meardon-a65a7310b/" target="_blank">LinkedIn <span class="fa">external-link</span></a></li>
+            </ul>
+        </header>
+
+        <!-- Page navigation -->
+        <nav>
+            <div id = "navOneHeader" class = "nav_button">
+                <button><d1>Freelance</d1><img src = "./resources/assets/Dropdown.svg"></button>
+                <ul id = "navOneOptions">
+                    <li><a href = "https://imjustmarkymark.github.io/thrivent"><d1>Professional</d1></a></li>
+                    <li><a href = "visual media.html"><d1>Fun Stuff</d1></a></li>                </ul>
+                <br>
+            </div>
+            <div id = "navTwoHeader" class = "nav_button">
+                <button><d2>Graphic Design</d2><img src = "./resources/assets/Dropdown.svg"></button>
+                <ul id = "navTwoOptions">
+                    <!-- <li><a href = "freelance-webdesign.html"><d2>Web Developer's Portfolio</d2></a></li> -->
+                    <li><a href = "visual media.html"><d2>Fun Stuff </d2></a></li>
+                    <li><a href = "freelance-graphicDesign.html"><d2>Graphic Design</d2></a></li>
+                </ul>
+            </div>
+        </nav>
+        <br></br>
+        <!-- Posters -->
+        <p>I created a series of film posters as well as a music album cover. Fun fact: I helped create some of these films too.</p>
+        <div id = "films">
+            <h2>Film Posters</h2>
+            <div class = "posters">
+                <img src = "./resources/assets/freelance/graphic_design/Affection_poster.png">
+                <img src = "resources/assets/freelance/graphic_design/AStoryRevealed_poster.jpg">
+                <img src = "resources/assets/freelance/graphic_design/Clock-Boy_poster.jpg">
+                <img src = "resources/assets/freelance/graphic_design/The_Rehearsal_poster.jpg">
+            </div>
+        </div>
+        <br></br>
+        <br></br>
+        <h2>Album Cover</h2>
+        <p>Check out the album on <a href="https://open.spotify.com/album/4ZboKXz4UyA6CWfILDYBHp" target="_blank">Spotify</a>!</p>
+        <div class = "album">
+            <br></br>
+            <!-- <img src = "resources/assets/freelance/graphic_design/Early Shorts.png"><div class = "relative"> -->
+            <div class="relative">
+                <div class = "siema1">
+                    <img src = "./resources/assets/freelance/graphic_design/EarlyShorts_thumbnail.jpg">
+                    <img src = "./resources/assets/freelance/graphic_design/EarlyShorts_TrayCardOutside.jpg">
+                    <img src = "./resources/assets/freelance/graphic_design/EarlyShorts_disc.jpg">
+                </div>
+                <button class="prev1"></button>
+                <button class="next1"></button>
+            </div>
+        <div class="footer"></div>
+        <script src="./script_graphicdesign.js"></script>
+        <script src="./siema-master/dist/siema.min1.js"></script>
+        <script>
+            const mySiema1 = new Siema1({loop: true});
+            document.querySelector('.prev1').addEventListener('click', () => mySiema1.prev());
+            document.querySelector('.next1').addEventListener('click', () => mySiema1.next());
+        </script>
+    </body>
+</html>

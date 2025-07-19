@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./resources/CSS/style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/une5rut.css">
+        <title>Mark's Portfolio | Internal Federal Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1">
+        <link rel="icon" type="image/png" href="./resources/assets/meardon_logo.png"/>
+    </head>
+
+    <body>
+      
+        <header id="nav_header">
+            <ul class="header_ul">
+                <li><a id = "nav_home" href="https://imjustmarkymark.github.io">Home</a></li>
+                <li class="dropdown" id="dropdownLabel"><button class="prof_dropdown">Professional
+                    <!-- <span class="fa">chevron-down</span> -->
+                    <img src="/resources/assets/Chevron Down.svg">
+                    </button>
+                    <div class="prof_dropdown_content" id="dropdown_content">
+                        <a href="https://imjustmarkymark.github.io/thrivent">Life Insurance</a>
+                        <a href="https://imjustmarkymark.github.io/federal student loans">Federal Student Aid</a>
+                        <a href="https://imjustmarkymark.github.io/internal federal product">Internal Federal Project</a>
+                    </div>
+                </li>
+                <li><a id="" href="https://imjustmarkymark.github.io/visual%20media">Visual Media</a></li>
+                <li><a id="nav_contact" href="https://www.linkedin.com/in/mark-meardon-a65a7310b/" target="_blank">LinkedIn
+                    <!-- <span class="fa">external-link</span> -->
+                    <img src="/resources/assets/External_link.svg">
+                </a></li>
+            </ul>
+        </header>
+        <!-- Role and Mission -->
+
+        <div class = "brief">
+
+            <h3>Fjord, Part of Accenture Song</h3>
+            <d1>Internal Federal Project</d1>
+
+            <h5 class = "project_label">My Roles</h5>
+            <p>UX Designer <br> Design Researcher <br>Service Designer</p>
+
+            <h5 class = "project_label">Project</h5>
+            <p>Design a singular digital product that replaces dozens of siloed legacy products across a dozen plus federal agencies.</p>
+
+            <h5 class = "project_label">Note</h5>
+            <span><p>Due to non-disclosure agreements, I cannot provide specificities in my descriptions or accompanied </p><p id = "frodoText">images.</p></span>
+            <!-- <img id = "frodo" src = "resources/assets/professional/internal/frodo.gif"> -->
+        </div>
+
+        <!-- Content -->
+        <div class = "professional_section">
+            <h1>UX Design</h1>
+            <br>
+            <p>The day-to-day work generally consisted of designing screens and workflows. I worked in a <strong>highly collaborative</strong> format with other designers from <strong>white-board sketches</strong> to <strong>high-fidelity designs</strong> to delivery.</p>
+            <div class = "relative">
+                <div id = "UX_design" class = "siema3">
+                    <img src = "resources/assets/professional/internal/UX_ideation_blurred.jpg">
+                    <img src = "resources/assets/professional/internal/UX_whiteboarding_blurred.jpg">
+                    <img src = "resources/assets/professional/internal/UX_sketch_blurred.png">
+                    <img src = "resources/assets/professional/internal/UX_high-fidelity_design_blurred.jpg">
+                </div>
+                <img class="arrow arrow_left" src="resources/assets/cursor_arrow_dark_left.png">
+                <img class="arrow arrow_right"  src="resources/assets/cursor_arrow_dark.png">   
+            </div>
+
+            
+        </div>
+        <div class = "professional_section">
+            <h1>Service Design</h1>
+            <br>
+            <p>As my team built up trust with the client, we were pulled in to discuss and eventually <strong>lead strategic conversations</strong> regarding the holistic purpose and direction of the Product. To accomplish these tasks, I <strong>facilitated working sessions and workshops</strong> with stakeholders, future customers, and clients to build a <strong>blueprint, journey map, roadmap, and more.</strong></p>
+            <div class="relative">
+                <div id = "service_design" class="siema2">
+                    <img src = "./resources/assets/professional/internal/SD_journey_map_2_blurred2.png"> 
+                    <img src = "./resources/assets/professional/internal/SD_blueprint_2_blurred2.png" style="position: relative; top: 50px;">
+                </div>
+                <img class="arrow arrow_left2" src="resources/assets/cursor_arrow_dark_left.png">
+                <img class="arrow arrow_right2"  src="resources/assets/cursor_arrow_dark.png">  
+            </div>
+        </div>
+        <div class = "professional_section">
+            <h1>Research</h1>
+            <br>
+            <p>I led research initiatives for knowledge-gathering <strong>interviews</strong> and <strong>usability testing</strong> sessions. During my time on the project, my team was able to interview and test over 100 subject matter experts. <strong>Synthesis</strong> typically resulted in rooms covered in sticky-notes and computers with endless Excel sheets. Deliverables ranged from <strong>readouts</strong> to current and future <strong>process flows</strong>.</p>
+            <div>
+                <div class="image_project">
+                    <img src = "resources/assets/professional/internal/research_whiteboard_blurred.jpg">
+                </div>
+            </div>
+        </div>
+        <div class = "professional_section">
+            <h1>Design System</h1>
+            <br>
+            <p>I contributed to expanding the Product’s design system as our expectations and scope continuously altered. Our design team was the hub between all the development teams, and the design system was our North Star to maintain visual continuity and a familar user experience.</p>
+            <div>
+                <div class="image_project">
+                    <img src = "./resources/assets/professional/internal/ds_design_system_blurred2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="./siema-master/dist/siema.min1.js"></script> -->
+        <script src="./siema-master/dist/siema.min2.js"></script>
+        <script src="./siema-master/dist/siema.min3.js"></script>
+        <!-- <script src="./siema-master/dist/siema.min4.js"></script> -->
+        <script src = "./script_sibn.js"></script>
+        <script>
+            // const mySiema1 = new Siema1();
+            const mySiema2 = new Siema2({loop: true});
+            const mySiema3 = new Siema3({loop: true});
+            // const mySiema4 = new Siema4();
+            document.querySelector('.arrow_left').addEventListener('click', () => mySiema3.prev());
+            document.querySelector('.arrow_right').addEventListener('click', () => mySiema3.next());
+            document.querySelector('.arrow_left2').addEventListener('click', () => mySiema2.prev());
+            document.querySelector('.arrow_right2').addEventListener('click', () => mySiema2.next());
+          </script>
+    </body>
+</html>

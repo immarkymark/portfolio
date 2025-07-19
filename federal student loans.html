@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./resources/CSS/style.css" type="text/css" rel="stylesheet">
+        <!-- Extra font: Roca and basic sans -->
+        <link rel="stylesheet" href="https://use.typekit.net/une5rut.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1">
+        <title>Mark's Portfolio | Federal Student Loans</title>
+        <link rel="icon" type="image/png" href="./resources/assets/meardon_logo.png"/>        
+    </head>
+    <body>
+        <header id="nav_header">
+            <ul class="header_ul">
+                <li><a id = "nav_home" href="https://imjustmarkymark.github.io">Home</a></li>
+                <li class="dropdown" id="dropdownLabel"><button class="prof_dropdown">Professional
+                    <!-- <span class="fa">chevron-down</span> -->
+                    <img src="/resources/assets/Chevron Down.svg">
+                    </button>
+                    <div class="prof_dropdown_content" id="dropdown_content">
+                        <a href="https://imjustmarkymark.github.io/thrivent">Life Insurance</a>
+                        <a href="https://imjustmarkymark.github.io/federal student loans">Federal Student Aid</a>
+                        <a href="https://imjustmarkymark.github.io/internal federal product">Internal Federal Project</a>
+                    </div>
+                </li>
+                <li><a id="" href="https://imjustmarkymark.github.io/visual%20media">Visual Media</a></li>
+                <li><a id="nav_contact" href="https://www.linkedin.com/in/mark-meardon-a65a7310b/" target="_blank">LinkedIn
+                    <!-- <span class="fa">external-link</span> -->
+                    <img src="/resources/assets/External_link.svg">
+                </a></li>
+            </ul>
+        </header>
+        <!-- Role and Mission -->
+        <div class = "brief">
+
+            <h3>Fjord, Part of Accenture Song</h3>
+            <d1>Federal Student Aid</d1>
+
+            <h5 class = "project_label">My Roles</h5>
+            <p>Product Designer</p>
+            <p>Design Researcher</p>
+
+            <h5 class = "project_label">Project</h5>
+            <p>Translate the core fuctionailties of studentaid.gov (Federal Student Aid's website) into a native app experience.</p>
+
+            <h5 class = "project_label">Note</h5>
+            <span><p>Due to non-disclosure agreements, I cannot provide specificities in my descriptions or accompanied </p><p id = "jackieText">images.</p></span>
+            <!-- <img id = "jackie" src = "resources/assets/professional/ed/jackie.gif"> -->
+        </div>
+        <!-- Content -->
+        <div class = "professional_section">
+            <h1>UX Design</h1>
+            <br>
+            <p>My primary responsibility was to translate existing web designs into a native app, supporting Android and iOS.  Microinterations were rethought and redesigned to follow best practices for a mobile-first touch interface. This alternate perspective, where screen real estate is at a premium, allowed us to reconsider and simplify desktop web designs.</p>
+            <div class = "relative">
+                <div class = "siema1" id="ed_siema1">
+                    <!-- <img src = "resources/assets/professional/ed/UX_0_cropped2.png"> -->
+                    <div class="inner_shadow"><img src = "resources/assets/professional/ed/UX_1_cropped2.png"></div>
+                    <div class="inner_shadow"><img src = "resources/assets/professional/ed/UX_2_cropped2.png"></div>
+                    <div class="inner_shadow"><img src = "resources/assets/professional/ed/UX_3_cropped2.png"></div>
+                    <div class="inner_shadow"><img src = "resources/assets/professional/ed/UX_4_cropped2.png"></div>
+                </div>
+                <img class="arrow arrow_left" src="resources/assets/cursor_arrow_dark_left.png">
+                <img class="arrow arrow_right"  src="resources/assets/cursor_arrow_dark.png">                
+            </div>
+        </div>
+        <div class = "professional_section">
+            <h1>Research</h1>
+            <br>
+            <p>Whenever possible, we pushed our client to support usability testing to evaluate the efficacy of our designs. I built a usability testing guide, led virtual interviews, and synthesized the aggregated data into actionable takeaways and insights for key stakeholders.</p>
+            <div class = "relative">
+                <div class = "siema2" id="ed_siema2">
+                    <img src = "resources/assets/professional/ed/Research_1.png">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class = "professional_section">
+            <h1>Design System</h1>
+            <br>
+            <p>As one of the first designers on the mobile app, I contributed to fleshing out the mobile app design system as it was translated from the orignial web design system. With different platforms and use cases comes new directions to take the design system. Over time, I identified areas of friction when translating to the build, and helped realign the design system's technical feasability alongside developers.</p>
+            
+            <div class = "relative">
+                <div class = "siema3" id="ed_siema3">
+                    <img src = "./resources/assets/professional/ed/DesignSystem_1.png">
+                </div>
+            </div>
+        </div>
+        <script src = "./script_ed.js"></script>
+        <script src="./siema-master/dist/siema.min1.js"></script>
+        <script src="./siema-master/dist/siema.min2.js"></script>
+        <script src="./siema-master/dist/siema.min3.js"></script>
+        <script>
+            const mySiema1 = new Siema1({loop: true});
+            const mySiema2 = new Siema2();
+            const mySiema3 = new Siema3();
+            document.querySelector('.arrow_left').addEventListener('click', () => mySiema1.prev());
+            document.querySelector('.arrow_right').addEventListener('click', () => mySiema1.next());
+        </script>
+    </body>
+</html>
